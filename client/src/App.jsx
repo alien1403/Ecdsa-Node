@@ -12,13 +12,13 @@ function App() {
     <div className="app">
       <Wallet
         balance={balance}
+        setPrivateKey={setPrivateKey}
+        privateKey={privateKey}
         setBalance={setBalance}
         address={address}
         setAddress={setAddress}
-        privateKey = {privateKey}
-        setPrivateKey = {setPrivateKey}
       />
-      <Transfer setBalance={setBalance} address={address} />
+      <Transfer setBalance={setBalance} address={address} privateKey={privateKey} />
     </div>
   );
 }
